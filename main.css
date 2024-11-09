@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    width: 400px;
+    align-content: center;
+
+}
+
+@font-face {
+    font-family: 'Moderate';
+    src: url('./fonts/Moderat-Regular.woff2') format('woff2'),
+         url('./fonts/Moderat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Banner {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-text {
+    font-family: "Moderate";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    margin-right: 16px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.title{
+    width: 328px;
+    color: #FFFFFF;
+    font-family: "Moderate";
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    margin: 0;
+}
+
+.millions{
+    font-family: "Moderate";
+    width: 328px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+}
+
+.input1{
+    width: 328px;
+    height: 81px;
+    gap: 0px;
+    border: none;
+    text-align: center;
+    background-color: #191919;
+    margin-top: 24px;
+}
+
+.input1::placeholder {
+    font-family: "Moderate";
+    color: #818181;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.input1:focus {
+    font-family: "Moderate";
+    color: #818181;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.input1:valid {
+    font-family: "Moderate";
+    color: #818181;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.calculate{
+    width: 328px;
+    height: 49px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #191919;
+    font-family: "Moderate";
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 60px;
+}
+
+.resultContainer {
+    display: none;
+}
+
+.result{
+    font-family: Moderat;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 57.6px;
+    text-align: center;
+    color: #FFFFFF;
+}
