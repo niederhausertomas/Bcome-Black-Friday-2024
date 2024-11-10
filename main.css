@@ -1,17 +1,36 @@
+@font-face {
+    font-family: 'Moderat-Regular';
+    src: url('./fonts/Moderat-Regular.woff2') format('woff2'),
+         url('./fonts/Moderat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Moderat-Light';
+    src: url('./fonts/Moderat-Light.woff2') format('woff2'),
+         url('./fonts/Moderat-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Moderat-Medium';
+    src: url('./fonts/Moderat-Medium.woff2') format('woff2'),
+         url('./fonts/Moderat-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     background-color: rgb(0, 0, 0);
     margin: 0;
     width: 400px;
     align-content: center;
-
-}
-
-@font-face {
-    font-family: 'Moderate';
-    src: url('./fonts/Moderat-Regular.woff2') format('woff2'),
-         url('./fonts/Moderat-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Moderat-Regular";
 }
 
 .Banner {
@@ -28,13 +47,13 @@ body {
 }
 
 .marquee-text {
-    font-family: "Moderate";
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 17px;
     color: #FFFFFF;
     white-space: nowrap;
     margin-right: 16px;
+    font-family: "moderat-light";
 }
 
 @keyframes marquee {
@@ -51,13 +70,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
 
 .title{
     width: 328px;
     color: #FFFFFF;
-    font-family: "Moderate";
     font-weight: 500;
     font-size: 48px;
     line-height: 57px;
@@ -65,12 +82,19 @@ body {
 }
 
 .millions{
-    font-family: "Moderate";
     width: 328px;
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 16.8px;
+    text-align: center;
+    font-family: "moderat-light";
+    margin-bottom: 50px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -85,21 +109,18 @@ body {
 }
 
 .input1::placeholder {
-    font-family: "Moderate";
     color: #818181;
     font-size: 14px;
     line-height: 16px;
 }
 
 .input1:focus {
-    font-family: "Moderate";
     color: #818181;
     font-size: 14px;
     line-height: 16px;
 }
 
 .input1:valid {
-    font-family: "Moderate";
     color: #818181;
     font-size: 14px;
     line-height: 16px;
@@ -111,10 +132,10 @@ body {
     border-radius: 4px;
     background-color: #FFFFFF;
     color: #191919;
-    font-family: "Moderate";
     font-size: 14px;
     line-height: 16px;
     margin-top: 60px;
+    font-family: "moderat-Medium";
 }
 
 .resultContainer {
@@ -122,10 +143,44 @@ body {
 }
 
 .result{
-    font-family: Moderat;
-    font-size: 48px;
+    font-size: 54px;
     font-weight: 500;
     line-height: 57.6px;
     text-align: center;
     color: #FFFFFF;
+    margin-top: 12px;
+}
+
+
+.cost{
+    font-family: "Moderat-Light";
+    width: 328px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: center;
+    
+}
+
+.more{
+    margin-top: 70px;
+    font-family: "Moderat-Light";
+    width: 328px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.try{
+    width: 328px;
+    height: 49px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #191919;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 60px;
+    font-family: "moderat-Medium";
 }
